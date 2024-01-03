@@ -1,0 +1,4 @@
+repository "Goodbye World@SirHansadike@cloud"
+  path "/"
+    br "/main"
+    co "/main"

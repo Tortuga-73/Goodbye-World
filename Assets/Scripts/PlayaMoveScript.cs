@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using System.Runtime.CompilerServices;
 
 public class PlayaMoveScript: MonoBehaviour
 {
@@ -65,9 +66,9 @@ public class PlayaMoveScript: MonoBehaviour
     private bool duringCrouchAnimation;
 
     [Header("Zoom Parameters")]
-    [SerializeField] private float timeToZoom = 0.3f;
+    [SerializeField] private float timeToZoom = 0.2f;
     [SerializeField] private float zoomFOV = 30f;
-    private float defaultFOV;
+    [SerializeField] private float defaultFOV;
     private Coroutine zoomRoutine;
 
     [Header("Headbob Parameters")]
@@ -288,6 +289,7 @@ public class PlayaMoveScript: MonoBehaviour
     {
         float targetFOV = isEnter ? zoomFOV : defaultFOV;
         float startingFOV = playerCamera.fieldOfView;
+
         float timeElapsed = 0;
 
         while(timeElapsed < timeToZoom)

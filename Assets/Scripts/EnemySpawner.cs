@@ -9,6 +9,10 @@ public class EnemySpawner : MonoBehaviour
     public int xPos;
     public int zPos;
     public int enemyCount;
+    [SerializeField] int targetEnemyCount = 10;
+    [SerializeField] int range = 15;
+    [SerializeField] int spawnInterval = 3;
+
 
     // Start is called before the first frame update
     void Start()
@@ -18,12 +22,14 @@ public class EnemySpawner : MonoBehaviour
 
     private IEnumerator SpawnEnemies()
     {
-        while (enemyCount < 15)
+        int positionx = (int)transform.position.x;
+        int positionz = (int)transform.position.z;
+        while (enemyCount < targetEnemyCount)
         {
-            xPos = Random.Range(25, 55);
-            zPos = Random.Range(15, 45);
+            xPos = Random.Range(positionx - range, positionx + range);
+            zPos = Random.Range(positionz - range, positionz + range);
             Instantiate(enemy, new Vector3(xPos, 2.5f, zPos), Quaternion.identity);
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(spawnInterval);
             enemyCount += 1;
         }
     }

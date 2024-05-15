@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using static UnityEngine.GraphicsBuffer;
+using Unity.VisualScripting;
 
 public class GunScript : MonoBehaviour
 {
@@ -19,9 +20,19 @@ public class GunScript : MonoBehaviour
 
     private float nextTimeToFire = 0f;
 
+    [Header("Zoom Parameters")]
+    [SerializeField] private float timeToZoom = 0.2f;
+    [SerializeField] private float zoomFOV = 30f;
+    [SerializeField] private float defaultFOV;
+    KeyCode zoomKey;
+    [SerializeField] private bool canZoom = true;
+    private Coroutine zoomRoutine;
+
     private void Start()
     {
         currentAmmo = maxAmmo;
+        defaultFOV = fpsCam.fieldOfView;
+        zoomKey = PlayerManager.instance.player.GetComponent<PlayaMoveScript>().zoomKey;
     }
 
 
@@ -46,6 +57,11 @@ public class GunScript : MonoBehaviour
             Shoot();
         }
 
+        if (canZoom)
+        {
+            HandleZoom();
+        }
+
     }
 
     IEnumerator Reload()
@@ -68,13 +84,54 @@ public class GunScript : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
-            Debug.Log(hit.transform.name);
-
             Enemy targetEnemy = hit.transform.GetComponent<Enemy>();
             if (targetEnemy != null)
             {
                 targetEnemy.TakeDamage(damage);
             }
         }
+    }
+
+    private void HandleZoom()
+    {
+        if (Input.GetKeyDown(zoomKey))
+        {
+            if (zoomRoutine != null)
+            {
+                StopCoroutine(zoomRoutine);
+                zoomRoutine = null;
+            }
+
+            zoomRoutine = StartCoroutine(ToggleZoom(true));
+        }
+
+        if (Input.GetKeyUp(zoomKey))
+        {
+            if (zoomRoutine != null)
+            {
+                StopCoroutine(zoomRoutine);
+                zoomRoutine = null;
+            }
+
+            zoomRoutine = StartCoroutine(ToggleZoom(false));
+        }
+    }
+
+    private IEnumerator ToggleZoom(bool isEnter)
+    {
+        float targetFOV = isEnter ? zoomFOV : defaultFOV;
+        float startingFOV = fpsCam.fieldOfView;
+
+        float timeElapsed = 0;
+
+        while (timeElapsed < timeToZoom)
+        {
+            fpsCam.fieldOfView = Mathf.Lerp(startingFOV, targetFOV, timeElapsed / timeToZoom);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        fpsCam.fieldOfView = targetFOV;
+        zoomRoutine = null;
     }
 }

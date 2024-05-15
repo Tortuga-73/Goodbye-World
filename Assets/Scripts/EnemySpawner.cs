@@ -9,6 +9,7 @@ public class EnemySpawner : MonoBehaviour
     public int xPos;
     public int zPos;
     public int enemyCount;
+
     [SerializeField] int targetEnemyCount = 10;
     [SerializeField] int range = 15;
     [SerializeField] int spawnInterval = 3;

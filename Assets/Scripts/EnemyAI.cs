@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
-    public float lookRadius = 10f;
+    public float lookRadius = 15f;
 
     Transform target;
     NavMeshAgent agent;

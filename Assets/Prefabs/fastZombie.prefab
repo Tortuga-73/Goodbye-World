@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 4361995713285731301}
   - component: {fileID: 3802869953656977279}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: fastZombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -131,7 +131,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.2
-  m_Speed: 1
+  m_Speed: 20
   m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 120

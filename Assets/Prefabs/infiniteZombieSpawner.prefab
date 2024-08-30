@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 249781062473455039}
   - component: {fileID: 4423046160264075307}
   m_Layer: 0
-  m_Name: InfiniteEnemySpawner
+  m_Name: infiniteZombieSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

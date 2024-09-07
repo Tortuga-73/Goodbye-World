@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class TestInteractable : Interactable
 {
+
+    [SerializeField] GameObject newWeapon;
+
     public override void OnFocus()
     {
         print("Looking At " + gameObject.name);
@@ -11,6 +14,8 @@ public class TestInteractable : Interactable
 
     public override void OnInteract()
     {
+        WeaponSwitch.Instance.AddWeapon(newWeapon);
+
         print("Interacted With " + gameObject.name);
     }
 

@@ -1,16 +1,22 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class WeaponSwitch : MonoBehaviour
 {
-    public int selectedWeapon = 0;
+    public static WeaponSwitch Instance;
     
-    // Start is called before the first frame update
+    public int selectedWeapon = 0;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     void Start()
     {
         SelectWeapon();
     }
 
-    // Update is called once per frame
     void Update()
     {
         int previousSelectedWeapon = selectedWeapon;
@@ -71,6 +77,30 @@ public class WeaponSwitch : MonoBehaviour
                 weapon.gameObject.SetActive(false);
             }
             i++;
+        }
+    }
+
+    public void AddWeapon(GameObject weaponPrefab)
+    {
+        if (transform.childCount > 1)
+        {
+            int i = 0;
+            foreach (Transform weapon in transform)
+            {
+                if (i == selectedWeapon)
+                {
+                    Destroy(weapon.gameObject);
+                }
+
+                i++;
+            }
+            GameObject newWeapon = Instantiate(weaponPrefab, new Vector3(), Quaternion.identity);
+                newWeapon.transform.SetParent(transform, false);
+        }
+        else if (transform.childCount <= 1)
+        {
+            GameObject newWeapon = Instantiate(weaponPrefab, new Vector3(), Quaternion.identity);
+            newWeapon.transform.SetParent(transform, false);
         }
     }
 }

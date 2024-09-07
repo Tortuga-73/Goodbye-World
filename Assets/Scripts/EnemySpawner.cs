@@ -5,14 +5,17 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
 
-    public GameObject enemy;
+    public GameObject zombie;
+    public GameObject fastZombie;
     public int xPos;
     public int zPos;
-    public int enemyCount;
+    public int zombieCount;
+    private float randomNum;
 
     [SerializeField] int targetEnemyCount = 10;
     [SerializeField] int range = 15;
     [SerializeField] int spawnInterval = 3;
+    [SerializeField] float spawnerDifficulty = 0f;
 
 
     // Start is called before the first frame update
@@ -25,13 +28,23 @@ public class EnemySpawner : MonoBehaviour
     {
         int positionx = (int)transform.position.x;
         int positionz = (int)transform.position.z;
-        while (enemyCount < targetEnemyCount)
+
+        while (zombieCount < targetEnemyCount)
         {
+            randomNum = Random.value;
+
             xPos = Random.Range(positionx - range, positionx + range);
             zPos = Random.Range(positionz - range, positionz + range);
-            Instantiate(enemy, new Vector3(xPos, 2.5f, zPos), Quaternion.identity);
+            if (randomNum < spawnerDifficulty)
+            {
+                Instantiate(fastZombie, new Vector3(xPos, 2.5f, zPos), Quaternion.identity);
+            }
+            else
+            {
+                Instantiate(zombie, new Vector3(xPos, 2.5f, zPos), Quaternion.identity);
+            }
             yield return new WaitForSeconds(spawnInterval);
-            enemyCount += 1;
+            zombieCount += 1;
         }
     }
 }

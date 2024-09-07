@@ -65,7 +65,7 @@ public class PlayaMoveScript: MonoBehaviour
 
     [Header("Interaction")]
     [SerializeField] private Vector3 interactionRayPoint = default;
-    [SerializeField] private float interactionDistance = default;
+    [SerializeField] private float interactionDistance = 3f;
     //[SerializeField] private LayerMask interactionLayer = default;
     private Interactable currentInteractable;
 
@@ -158,7 +158,6 @@ public class PlayaMoveScript: MonoBehaviour
         if (Input.GetKeyDown(interactKey) && currentInteractable != null)
         {
             currentInteractable.OnInteract();
-            print("kinda interact");
         }
     }
     //&& Physics.Raycast(playerCamera.ViewportPointToRay(interactionRayPoint), out RaycastHit hit, interactionDistance, interactionLayer)

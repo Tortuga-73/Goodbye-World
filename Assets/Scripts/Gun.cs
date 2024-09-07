@@ -28,6 +28,11 @@ public class GunScript : MonoBehaviour
     [SerializeField] private bool canZoom = true;
     private Coroutine zoomRoutine;
 
+    private void Awake()
+    {
+        fpsCam = Camera.main;
+    }
+
     private void Start()
     {
         currentAmmo = maxAmmo;

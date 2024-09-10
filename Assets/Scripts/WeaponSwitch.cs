@@ -1,10 +1,13 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class WeaponSwitch : MonoBehaviour
 {
     public static WeaponSwitch Instance;
-    
+
+    public static Action<float> OnWeaponSwap;
+
     public int selectedWeapon = 0;
 
     private void Awake()
@@ -71,6 +74,7 @@ public class WeaponSwitch : MonoBehaviour
             if (i == selectedWeapon)
             {
                 weapon.gameObject.SetActive(true);
+                OnWeaponSwap?.Invoke(weapon.gameObject.GetComponent<Gun>().maxAmmo);
             }
             else
             {
@@ -102,5 +106,6 @@ public class WeaponSwitch : MonoBehaviour
             GameObject newWeapon = Instantiate(weaponPrefab, new Vector3(), Quaternion.identity);
             newWeapon.transform.SetParent(transform, false);
         }
+        SelectWeapon();
     }
 }

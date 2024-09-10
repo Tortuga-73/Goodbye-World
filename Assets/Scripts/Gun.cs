@@ -2,14 +2,16 @@ using UnityEngine;
 using System.Collections;
 using static UnityEngine.GraphicsBuffer;
 using Unity.VisualScripting;
+using System;
 
-public class GunScript : MonoBehaviour
+public class Gun : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public float damage = 10f;
-    public float range = 100f;
-    public float fireRate = 15f;
+    [SerializeField] private float damage = 10f;
+    [SerializeField] private float range = 100f;
+    [SerializeField] private float fireRate = 15f;
+    [SerializeField] private bool isFullAuto = false;
     
     public int maxAmmo = 30;
     private int currentAmmo;
@@ -25,8 +27,12 @@ public class GunScript : MonoBehaviour
     [SerializeField] private float zoomFOV = 30f;
     [SerializeField] private float defaultFOV;
     KeyCode zoomKey;
+    KeyCode reloadKey = KeyCode.R;
     [SerializeField] private bool canZoom = true;
     private Coroutine zoomRoutine;
+
+    public static Action<float> OnShoot;
+    public static Action<float> OnReload;
 
     private void Awake()
     {
@@ -50,13 +56,18 @@ public class GunScript : MonoBehaviour
             return;
         }
 
-        if (currentAmmo <= 0)
+        if (currentAmmo <= 0 || (Input.GetKey(reloadKey) && currentAmmo < maxAmmo))
         {           
             StartCoroutine(Reload());
             return;
         }
         
-        if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
+        if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire && isFullAuto)
+        {
+            nextTimeToFire = Time.time + 1f / fireRate;
+            Shoot();
+        }
+        else if (Input.GetButtonDown("Fire1") && Time.time >= nextTimeToFire)
         {
             nextTimeToFire = Time.time + 1f / fireRate;
             Shoot();
@@ -77,6 +88,7 @@ public class GunScript : MonoBehaviour
         yield return new WaitForSeconds(reloadTime);
 
         currentAmmo = maxAmmo;
+        OnReload?.Invoke(currentAmmo);
         Debug.Log("Reloaded.");
         isReloading = false;
     }
@@ -85,6 +97,7 @@ public class GunScript : MonoBehaviour
     {
 
         currentAmmo--;
+        OnShoot?.Invoke(currentAmmo);
         
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))

@@ -39,8 +39,7 @@ public class Enemy : MonoBehaviour
     private void attack()
     {
         Debug.Log("Where my hug at?");
-        PlayerManager.instance.player.GetComponent<PlayaStatusScript>().currentHealth -= damage;
-        PlayerManager.instance.player.GetComponent<PlayaStatusScript>().healStartTimer = 0f;
+        PlayaStatusScript.OnTakeDamage(10);
     }
     private void FixedUpdate()
     {

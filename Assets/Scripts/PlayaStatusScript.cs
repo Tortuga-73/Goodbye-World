@@ -5,52 +5,79 @@ using System;
 
 public class PlayaStatusScript : MonoBehaviour
 {
-    
-    public float maxHealth = 100f;
-    public float currentHealth;
-    public float healStartTimer;
-    public float healInterval;
-    
-    // Start is called before the first frame update
-    void Start()
+
+    [SerializeField] private float maxHealth = 100f;
+    [SerializeField] private float timeBeforeRegen = 5f;
+    [SerializeField] private float healthValueIncrement = 1f;
+    [SerializeField] private float healthTimeIncrement = .04f;
+    private float currentHealth;
+    private Coroutine regeneratingHealth;
+
+    public static Action<float> OnTakeDamage;
+    public static Action<float> OnDamage;
+    public static Action<float> OnHeal;
+
+    private void OnEnable()
+    {
+        OnTakeDamage += ApplyDamage;
+    }
+
+    private void OnDisable()
+    {
+        OnTakeDamage -= ApplyDamage;
+    }
+
+    void Awake()
     {
         currentHealth = maxHealth;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void ApplyDamage(float dmg)
     {
-        if (currentHealth <= 0)
-        {
-            Debug.Log("you died POJIOIJEWOJ:::::::::;;;:::;::::;::::;::::;;");
-            currentHealth = maxHealth;
-        }
+        currentHealth -= dmg;
+        OnDamage?.Invoke(currentHealth);
 
-        if (healStartTimer > 5f && healInterval >= 1f)
+        if (currentHealth < 0)
+            KillPlayer();
+        else if(regeneratingHealth != null)
+            StopCoroutine(regeneratingHealth);
+
+        regeneratingHealth = StartCoroutine(RegenerateHealth());
+    }
+
+    private void KillPlayer()
+    {
+        currentHealth = 0f;
+
+        if (regeneratingHealth != null)
         {
-            currentHealth += 10f;
-            healInterval = 0f;
+            StopCoroutine(regeneratingHealth);
+
+            print("ya died.");
         }
     }
 
-    private void FixedUpdate()
+    private IEnumerator RegenerateHealth()
     {
-        if (currentHealth != maxHealth)
+        yield return new WaitForSeconds(timeBeforeRegen);
+        WaitForSeconds timeToWait = new WaitForSeconds(healthTimeIncrement);
+
+        while (currentHealth < maxHealth)
         {
-            healStartTimer += 0.02f;
+            currentHealth += healthValueIncrement;
+
+            if (currentHealth > maxHealth)
+                currentHealth = maxHealth;
+
+            OnHeal?.Invoke(currentHealth);
+            yield return timeToWait;
         }
-        else
-        {
-            healStartTimer = 0f;
-        }
+
+        regeneratingHealth = null;
+    }
+    
+    void Update()
+    {
         
-        if (healStartTimer > 5f)
-        {
-            healInterval += .02f;
-        }
-        else
-        {
-            healInterval = 0f;
-        }
     }
 }

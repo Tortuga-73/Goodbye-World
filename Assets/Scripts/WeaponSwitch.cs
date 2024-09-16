@@ -6,7 +6,8 @@ public class WeaponSwitch : MonoBehaviour
 {
     public static WeaponSwitch Instance;
 
-    public static Action<float> OnWeaponSwap;
+    public static Action<float, float> OnWeaponSwap;
+    public static Action stopReload;
 
     public int selectedWeapon = 0;
 
@@ -68,13 +69,14 @@ public class WeaponSwitch : MonoBehaviour
 
     void SelectWeapon()
     {
+        stopReload?.Invoke();
         int i = 0;
         foreach (Transform weapon in transform)
         {
             if (i == selectedWeapon)
             {
                 weapon.gameObject.SetActive(true);
-                OnWeaponSwap?.Invoke(weapon.gameObject.GetComponent<Gun>().maxAmmo);
+                OnWeaponSwap?.Invoke(weapon.gameObject.GetComponent<Gun>().currentAmmo, weapon.gameObject.GetComponent<Gun>().maxAmmo);
             }
             else
             {

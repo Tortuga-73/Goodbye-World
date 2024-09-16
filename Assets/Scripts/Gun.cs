@@ -14,7 +14,7 @@ public class Gun : MonoBehaviour
     [SerializeField] private bool isFullAuto = false;
     
     public int maxAmmo = 30;
-    private int currentAmmo;
+    public int currentAmmo;
     public float reloadTime = 2f;
     private bool isReloading = false;
 
@@ -33,6 +33,21 @@ public class Gun : MonoBehaviour
 
     public static Action<float> OnShoot;
     public static Action<float> OnReload;
+
+    private void OnEnable()
+    {
+        WeaponSwitch.stopReload += StopReload;
+    }
+
+    private void StopReload()
+    {
+        if (isReloading)
+        {
+            StopCoroutine(Reload());
+            isReloading = false;
+            Debug.Log("Cancelled Reload.");
+        }
+    }
 
     private void Awake()
     {
@@ -80,7 +95,7 @@ public class Gun : MonoBehaviour
 
     }
 
-    IEnumerator Reload()
+    public IEnumerator Reload()
     {
         isReloading = true;
         Debug.Log("Reloading...");

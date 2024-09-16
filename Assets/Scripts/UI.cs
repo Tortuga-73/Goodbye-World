@@ -20,7 +20,7 @@ public class UI : MonoBehaviour
         PlayaStatusScript.OnHeal += UpdateHealth;
         Gun.OnShoot += UpdateAmmo;
         Gun.OnReload += UpdateAmmo;
-        WeaponSwitch.OnWeaponSwap += UpdateMaxAmmo;
+        WeaponSwitch.OnWeaponSwap += WeaponSwap;
     }
     private void OnDisable()
     {
@@ -28,20 +28,21 @@ public class UI : MonoBehaviour
         PlayaStatusScript.OnHeal -= UpdateHealth;
         Gun.OnShoot -= UpdateAmmo;
         Gun.OnReload -= UpdateAmmo;
-        WeaponSwitch.OnWeaponSwap -= UpdateMaxAmmo;
+        WeaponSwitch.OnWeaponSwap -= WeaponSwap;
     }
     private void UpdateHealth(float currentHealth)
     {
         healthText.text = currentHealth.ToString("00");
     }
-    private void UpdateAmmo(float currentAmm)
+    private void UpdateAmmo(float cAmm)
     {
-        currentAmmo = currentAmm;
+        currentAmmo = cAmm;
         AmmoText();
     }
-    private void UpdateMaxAmmo(float maxAmm)
+    private void WeaponSwap(float cAmm, float mAmm)
     {
-        maxAmmo = maxAmm;
+        currentAmmo = cAmm;
+        maxAmmo = mAmm;
         AmmoText();
     }
     private void AmmoText()

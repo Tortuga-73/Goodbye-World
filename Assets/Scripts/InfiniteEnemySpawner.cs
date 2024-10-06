@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEditor.Rendering;
 using UnityEngine;
 
@@ -22,11 +23,12 @@ public class InfiniteEnemySpawner : MonoBehaviour
     {
         float positionx = transform.position.x;
         float positionz = transform.position.z;
+        float positiony = transform.position.y;
         while ((transform.childCount < targetEnemyCount) && shouldSpawn)
         {
             xPos = Random.Range(positionx - range, positionx + range);
             zPos = Random.Range(positionz - range, positionz + range);
-            GameObject Enemy = Instantiate(enemy, new Vector3(xPos, 2.5f, zPos), Quaternion.identity);
+            GameObject Enemy = Instantiate(enemy, new Vector3(xPos, positiony, zPos), Quaternion.identity);
             Enemy.transform.SetParent(this.gameObject.transform);
             shouldSpawn = false;
         }

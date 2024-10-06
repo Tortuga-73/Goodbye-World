@@ -82,7 +82,6 @@ public class PlayaMoveScript: MonoBehaviour
 
     private void HandleMovmementInput()
     {
-        
         currentInput = new Vector2((isCrouching ? crouchSpeed : isSprinting ? sprintSpeed : walkSpeed) * Input.GetAxisRaw("Vertical"), (isCrouching ? crouchSpeed : isSprinting ? sprintSpeed : walkSpeed) * Input.GetAxisRaw("Horizontal"));
 
         float moveDirectionY = moveDirection.y;

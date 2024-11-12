@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
@@ -12,6 +13,9 @@ public class Enemy : MonoBehaviour
     public float timer = 2f;
     public bool canAttack;
     public bool inRange;
+    private float deathScore = 100f;
+
+    public static Action<float> OnKilledEnemy;
 
     public void TakeDamage(float amount)
     {
@@ -25,6 +29,7 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         Destroy(gameObject);
+        OnKilledEnemy?.Invoke(deathScore);
     }
 
     private void Update()

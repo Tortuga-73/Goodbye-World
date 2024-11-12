@@ -26,10 +26,16 @@ public class Gun : MonoBehaviour
     [SerializeField] private float timeToZoom = 0.2f;
     [SerializeField] private float zoomFOV = 30f;
     [SerializeField] private float defaultFOV;
+    [SerializeField] private float zoomSensModifier = 0.5f;
     KeyCode zoomKey;
     KeyCode reloadKey = KeyCode.R;
     [SerializeField] private bool canZoom = true;
     private Coroutine zoomRoutine;
+
+    private float defaultSensX;
+    private float defaultSensY;
+    private float zoomSensX;
+    private float zoomSensY;
 
     public static Action<float> OnShoot;
     public static Action<float> OnReload;
@@ -59,6 +65,12 @@ public class Gun : MonoBehaviour
         currentAmmo = maxAmmo;
         defaultFOV = fpsCam.fieldOfView;
         zoomKey = PlayerManager.instance.player.GetComponent<PlayaMoveScript>().zoomKey;
+
+        defaultSensX = PlayerManager.instance.player.GetComponent<PlayaMoveScript>().lookSpeedX;
+        defaultSensY = PlayerManager.instance.player.GetComponent<PlayaMoveScript>().lookSpeedY;
+
+        zoomSensX = PlayerManager.instance.player.GetComponent<PlayaMoveScript>().lookSpeedX * zoomSensModifier;
+        zoomSensY = PlayerManager.instance.player.GetComponent<PlayaMoveScript>().lookSpeedY * zoomSensModifier;
     }
 
 
@@ -155,16 +167,27 @@ public class Gun : MonoBehaviour
         float targetFOV = isEnter ? zoomFOV : defaultFOV;
         float startingFOV = fpsCam.fieldOfView;
 
+        float startingSensX = PlayerManager.instance.player.GetComponent<PlayaMoveScript>().lookSpeedX;
+        float startingSensY = PlayerManager.instance.player.GetComponent<PlayaMoveScript>().lookSpeedY;
+
+        float targetSensX = isEnter ? zoomSensX : defaultSensX;
+        float targetSensY = isEnter ? zoomSensY : defaultSensY;
+
         float timeElapsed = 0;
 
         while (timeElapsed < timeToZoom)
         {
             fpsCam.fieldOfView = Mathf.Lerp(startingFOV, targetFOV, timeElapsed / timeToZoom);
+            PlayerManager.instance.player.GetComponent<PlayaMoveScript>().lookSpeedX = Mathf.Lerp(startingSensX, targetSensX, timeElapsed / timeToZoom);
+            PlayerManager.instance.player.GetComponent<PlayaMoveScript>().lookSpeedY = Mathf.Lerp(startingSensY, targetSensY, timeElapsed / timeToZoom);
             timeElapsed += Time.deltaTime;
             yield return null;
         }
 
         fpsCam.fieldOfView = targetFOV;
+        PlayerManager.instance.player.GetComponent<PlayaMoveScript>().lookSpeedX = targetSensX;
+        PlayerManager.instance.player.GetComponent<PlayaMoveScript>().lookSpeedY = targetSensY;
+
         zoomRoutine = null;
     }
 }

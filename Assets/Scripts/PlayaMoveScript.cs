@@ -39,8 +39,8 @@ public class PlayaMoveScript: MonoBehaviour
     [SerializeField] private float gravity = 30.0f;
 
     [Header("Look Parameters")]
-    [SerializeField, Range(1, 10)] private float lookSpeedX = 2.0f;
-    [SerializeField, Range(1, 10)] private float lookSpeedY = 2.0f;
+    [SerializeField, Range(1, 10)] public float lookSpeedX = 2.0f;
+    [SerializeField, Range(1, 10)] public float lookSpeedY = 2.0f;
     [SerializeField, Range(1, 180)] private float upperLookLimit = 80.0f;
     [SerializeField, Range(1, 180)] private float lowerLookLimit = 80.0f;
 

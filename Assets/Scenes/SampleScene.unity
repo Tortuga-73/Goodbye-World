@@ -168,6 +168,77 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &15361201
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 2558792573200481354, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_CarveOnlyStationary
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 35.159554
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.1707087
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -63.46554
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+--- !u!4 &44897831 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 573490540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &59422188 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 1109827012}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &113606766
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,6 +363,63 @@ MonoBehaviour:
   timeBeforeRegen: 3
   healthValueIncrement: 1
   healthTimeIncrement: 0.1
+--- !u!1001 &120900264
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -46.75482
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.8304443
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 27.206985
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD Variant (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
 --- !u!1 &177125262
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,6 +677,16 @@ MonoBehaviour:
   healthText: {fileID: 1078083441}
   ammoText: {fileID: 337157920}
   scoreText: {fileID: 1100540233}
+--- !u!4 &240476290 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 1204264588}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &305337336 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 1075430006}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &337157918
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,6 +823,78 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 337157918}
   m_CullTransparentMesh: 1
+--- !u!4 &366214632 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 1778519114}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &367438645
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 37.58271
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.1455498
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.776026
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD Variant (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+--- !u!4 &479749830 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 1577355377}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &480727706 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 1217608206}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &551381755
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -738,6 +948,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6969710087473706935, guid: c840c6c71eb46dc48973a43a455fcbe5, type: 3}
+      propertyPath: range
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969710087473706935, guid: c840c6c71eb46dc48973a43a455fcbe5, type: 3}
       propertyPath: zombie
       value: 
       objectReference: {fileID: 3112191823950696697, guid: 558c9d90f17c4824daca57efbec2c739, type: 3}
@@ -754,6 +968,68 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c840c6c71eb46dc48973a43a455fcbe5, type: 3}
+--- !u!1001 &573490540
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -56.80375
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0738449
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -164.21498
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD Variant (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+--- !u!4 &586541292 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 1045674825}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &587773490
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,6 +1097,180 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8084334927845326150, guid: 677375a2a4866124dbbe80b4630c85f5, type: 3}
   m_PrefabInstance: {fileID: 1957492292}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &614379764
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 54.631935
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.9202042
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 61.859917
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD Variant (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+--- !u!1 &619989504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 619989505}
+  m_Layer: 0
+  m_Name: Trees
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &619989505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619989504}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1930026356}
+  - {fileID: 1442089445}
+  - {fileID: 871778793}
+  - {fileID: 1667071618}
+  - {fileID: 480727706}
+  - {fileID: 1853706557}
+  - {fileID: 1802094173}
+  - {fileID: 59422188}
+  - {fileID: 479749830}
+  - {fileID: 1796614413}
+  - {fileID: 1716554438}
+  - {fileID: 1111897940}
+  - {fileID: 366214632}
+  - {fileID: 586541292}
+  - {fileID: 240476290}
+  - {fileID: 2100444395}
+  - {fileID: 44897831}
+  - {fileID: 1900222382}
+  - {fileID: 1601154080}
+  - {fileID: 1537064068}
+  - {fileID: 305337336}
+  - {fileID: 1593626182}
+  - {fileID: 704679521}
+  - {fileID: 1051543145}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &641791743
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -102.342476
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.333221
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 129.15489
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD Variant (19)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+--- !u!4 &704679521 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 2123028837}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
@@ -916,6 +1366,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &740997357
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.350426
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.478996
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -136.75964
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD Variant (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
 --- !u!1 &758922263
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,6 +1562,68 @@ Transform:
   - {fileID: 1675175258}
   m_Father: {fileID: 963194228}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &841902906
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 29.535694
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.1047134
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 18.51294
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD Variant (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+--- !u!4 &871778793 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 1384069955}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &953116061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1519,6 +2088,182 @@ Transform:
   - {fileID: 769188350}
   m_Father: {fileID: 113606769}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &979734958
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -129.73343
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.13295746
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -124.43086
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD Variant (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+--- !u!1001 &1045674825
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -112.3586
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.0433655
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 66.119896
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD Variant (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+--- !u!4 &1051543145 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 641791743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1075430006
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 148.16159
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.9849777
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.536194
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD Variant (16)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
 --- !u!1 &1078083439
 GameObject:
   m_ObjectHideFlags: 0
@@ -1789,6 +2534,125 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1100540231}
   m_CullTransparentMesh: 1
+--- !u!1001 &1108668343
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 70.724205
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.502167
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 100.022255
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD Variant (17)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+--- !u!1001 &1109827012
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 92.250374
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.2065887
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 42.37066
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD Variant (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+--- !u!4 &1111897940 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 2096896069}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1118852226
 GameObject:
   m_ObjectHideFlags: 0
@@ -1857,6 +2721,419 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1204264588
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -186.16515
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.7593002
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -34.8432
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD Variant (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+--- !u!1001 &1217608206
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.557534
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.49273682
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.73472595
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+--- !u!1001 &1235656505
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 76.99618
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.808655
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -125.77394
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD Variant (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+--- !u!1001 &1384069955
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 34.12724
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5081577
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.8722687
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD Variant (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+--- !u!1 &1403483932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1403483934}
+  - component: {fileID: 1403483933}
+  m_Layer: 0
+  m_Name: WindZone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!182 &1403483933
+WindZone:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403483932}
+  m_Enabled: 1
+  m_Mode: 0
+  m_Radius: 1
+  m_WindMain: 1
+  m_WindTurbulence: 1
+  m_WindPulseMagnitude: 0.5
+  m_WindPulseFrequency: 0.01
+--- !u!4 &1403483934
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403483932}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 53.12, y: 6.83, z: -64.27}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1442089445 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 15361201}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1537064068 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 1632576388}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1577355377
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 76.759476
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.552658
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -33.227997
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD Variant (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+--- !u!4 &1593626182 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 1108668343}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1601154080 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 1235656505}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1632576388
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 106.68456
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.773827
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 83.08126
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD Variant (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+--- !u!4 &1667071618 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 367438645}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1675175257
 GameObject:
   m_ObjectHideFlags: 0
@@ -1888,6 +3165,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 769188350}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1676045986
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.638889
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.44049835
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 53.01729
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD Variant (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+--- !u!4 &1716554438 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 120900264}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1722539514
 GameObject:
   m_ObjectHideFlags: 0
@@ -2128,6 +3467,78 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1001 &1778519114
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.231491
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.5393524
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -61.585114
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD Variant (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+--- !u!4 &1796614413 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 614379764}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1802094173 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 1676045986}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1853706557 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 841902906}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1880257137
 GameObject:
   m_ObjectHideFlags: 0
@@ -2247,6 +3658,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newWeapon: {fileID: 6079728036003372954, guid: ea01faa61ad12c941a6fd34b39ef78a0, type: 3}
+--- !u!4 &1900222382 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 740997357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1930026356 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 4661339039668798655}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1944428049
 GameObject:
   m_ObjectHideFlags: 0
@@ -2362,75 +3783,186 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 677375a2a4866124dbbe80b4630c85f5, type: 3}
---- !u!1001 &107899158460407458
+--- !u!1001 &2096896069
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 619989505}
     m_Modifications:
-    - target: {fileID: 6546006804339551990, guid: 5932c35e4abc07143a656aa018dd9d92, type: 3}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 31.13
+      value: -20.674368
       objectReference: {fileID: 0}
-    - target: {fileID: 6546006804339551990, guid: 5932c35e4abc07143a656aa018dd9d92, type: 3}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.63
+      value: 1.4136734
       objectReference: {fileID: 0}
-    - target: {fileID: 6546006804339551990, guid: 5932c35e4abc07143a656aa018dd9d92, type: 3}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 6.5547028
       objectReference: {fileID: 0}
-    - target: {fileID: 6546006804339551990, guid: 5932c35e4abc07143a656aa018dd9d92, type: 3}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6546006804339551990, guid: 5932c35e4abc07143a656aa018dd9d92, type: 3}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 6546006804339551990, guid: 5932c35e4abc07143a656aa018dd9d92, type: 3}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 6546006804339551990, guid: 5932c35e4abc07143a656aa018dd9d92, type: 3}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 6546006804339551990, guid: 5932c35e4abc07143a656aa018dd9d92, type: 3}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6546006804339551990, guid: 5932c35e4abc07143a656aa018dd9d92, type: 3}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6546006804339551990, guid: 5932c35e4abc07143a656aa018dd9d92, type: 3}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7655068326386959940, guid: 5932c35e4abc07143a656aa018dd9d92, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7655068326386959940, guid: 5932c35e4abc07143a656aa018dd9d92, type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: -3343918655570749019, guid: 5932c35e4abc07143a656aa018dd9d92, type: 3}
-    - target: {fileID: 7655068326386959940, guid: 5932c35e4abc07143a656aa018dd9d92, type: 3}
-      propertyPath: m_SelectedEditorRenderState
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8745063717469758956, guid: 5932c35e4abc07143a656aa018dd9d92, type: 3}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
       propertyPath: m_Name
-      value: Tree
+      value: PF Conifer Tall BOTD Variant (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5932c35e4abc07143a656aa018dd9d92, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+--- !u!4 &2100444395 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+  m_PrefabInstance: {fileID: 979734958}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2123028837
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -36.81727
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.4959793
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 104.046906
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD Variant (18)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+--- !u!1001 &4661339039668798655
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619989505}
+    m_Modifications:
+    - target: {fileID: 2558792573200481354, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Extents.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 45.947327
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.9362984
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -58.438
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900837438655493362, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904736244746102034, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
+      propertyPath: m_Name
+      value: PF Conifer Tall BOTD
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98919dfc5c85374082fbf4923949f3a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2444,4 +3976,5 @@ SceneRoots:
   - {fileID: 177125265}
   - {fileID: 953116068}
   - {fileID: 551381755}
-  - {fileID: 107899158460407458}
+  - {fileID: 1403483934}
+  - {fileID: 619989505}

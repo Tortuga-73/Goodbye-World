@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -56,10 +57,6 @@ public class WeaponSwitch : MonoBehaviour
         {
             selectedWeapon = 1;
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3) && transform.childCount >= 3)
-        {
-            selectedWeapon = 2;
-        }
 
         if (previousSelectedWeapon != selectedWeapon)
         {
@@ -90,24 +87,44 @@ public class WeaponSwitch : MonoBehaviour
     {
         if (transform.childCount > 1)
         {
-            int i = 0;
-            foreach (Transform weapon in transform)
-            {
-                if (i == selectedWeapon)
-                {
-                    Destroy(weapon.gameObject);
-                }
-
-                i++;
-            }
-            GameObject newWeapon = Instantiate(weaponPrefab, new Vector3(), Quaternion.identity);
-                newWeapon.transform.SetParent(transform, false);
+            StartCoroutine(ReplaceWeapon(weaponPrefab));
         }
-        else if (transform.childCount <= 1)
+        else if (transform.childCount == 0)
         {
             GameObject newWeapon = Instantiate(weaponPrefab, new Vector3(), Quaternion.identity);
             newWeapon.transform.SetParent(transform, false);
+            selectedWeapon = 0;
+            newWeapon.gameObject.GetComponent<Gun>().sendAmmo();
+        }
+        else if (transform.childCount == 1)
+        {
+            GameObject newWeapon = Instantiate(weaponPrefab, new Vector3(), Quaternion.identity);
+            newWeapon.transform.SetParent(transform, false);
+            selectedWeapon = 1;
+            newWeapon.gameObject.GetComponent<Gun>().sendAmmo();
         }
         SelectWeapon();
+    }
+
+    private IEnumerator ReplaceWeapon(GameObject weaponPrefab)
+    {
+        int i = 0;
+        Debug.Log(transform.childCount);
+        foreach (Transform weapon in transform)
+        {
+            if (i == selectedWeapon)
+            {
+                Destroy(weapon.gameObject);
+            }
+
+            i++;
+        }
+        yield return null;
+        GameObject newWeapon = Instantiate(weaponPrefab, new Vector3(), Quaternion.identity);
+        yield return null;
+        newWeapon.transform.SetParent(transform, false);
+        Debug.Log(transform.childCount);
+        SelectWeapon();
+        newWeapon.gameObject.GetComponent<Gun>().sendAmmo();
     }
 }

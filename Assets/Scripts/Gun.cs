@@ -119,6 +119,12 @@ public class Gun : MonoBehaviour
         Debug.Log("Reloaded.");
         isReloading = false;
     }
+    
+    public void sendAmmo()
+    {
+        currentAmmo = maxAmmo;
+        OnReload?.Invoke(currentAmmo);
+    }
 
     void Shoot()
     {

@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class TestInteractable : Interactable
+public class TestInteractable: Interactable
 {
 
     [SerializeField] GameObject newWeapon;
@@ -15,6 +16,7 @@ public class TestInteractable : Interactable
     public override void OnInteract()
     {
         WeaponSwitch.Instance.AddWeapon(newWeapon);
+        this.gameObject.SetActive(false);
 
         print("Interacted With " + gameObject.name);
     }

@@ -12,19 +12,25 @@ public class PlayaStatusScript : MonoBehaviour
     [SerializeField] private float healthTimeIncrement = .04f;
     private float currentHealth;
     private Coroutine regeneratingHealth;
+    public float score = 0f;
 
     public static Action<float> OnTakeDamage;
     public static Action<float> OnDamage;
     public static Action<float> OnHeal;
+    public static Action<float> OnUpdateScore;
 
     private void OnEnable()
     {
         OnTakeDamage += ApplyDamage;
+        Enemy.OnKilledEnemy += UpdateScore;
+        SpeedUpgradeScript.OnAddScore += UpdateScore;
     }
 
     private void OnDisable()
     {
         OnTakeDamage -= ApplyDamage;
+        Enemy.OnKilledEnemy -= UpdateScore;
+        SpeedUpgradeScript.OnAddScore -= UpdateScore;
     }
 
     void Awake()
@@ -43,6 +49,12 @@ public class PlayaStatusScript : MonoBehaviour
             StopCoroutine(regeneratingHealth);
 
         regeneratingHealth = StartCoroutine(RegenerateHealth());
+    }
+
+    private void UpdateScore(float scoreChange)
+    {
+        score += scoreChange;
+        OnUpdateScore?.Invoke(score);
     }
 
     private void KillPlayer()

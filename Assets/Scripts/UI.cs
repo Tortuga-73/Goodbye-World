@@ -10,7 +10,6 @@ public class UI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText = default;
     private float maxAmmo;
     private float currentAmmo;
-    private float score = 0f;
 
     private void Start()
     {
@@ -23,7 +22,7 @@ public class UI : MonoBehaviour
         Gun.OnShoot += UpdateAmmo;
         Gun.OnReload += UpdateAmmo;
         WeaponSwitch.OnWeaponSwap += WeaponSwap;
-        Enemy.OnKilledEnemy += UpdateScore;
+        PlayaStatusScript.OnUpdateScore += UpdateScoreUI;
     }
     private void OnDisable()
     {
@@ -32,7 +31,7 @@ public class UI : MonoBehaviour
         Gun.OnShoot -= UpdateAmmo;
         Gun.OnReload -= UpdateAmmo;
         WeaponSwitch.OnWeaponSwap -= WeaponSwap;
-        Enemy.OnKilledEnemy -= UpdateScore;
+        PlayaStatusScript.OnUpdateScore -= UpdateScoreUI;
     }
     private void UpdateHealth(float currentHealth)
     {
@@ -53,9 +52,8 @@ public class UI : MonoBehaviour
     {
         ammoText.text = currentAmmo.ToString("00") + " / " + maxAmmo.ToString("00");
     }
-    private void UpdateScore(float scoreChange)
+    private void UpdateScoreUI(float newScore)
     {
-        score += scoreChange;
-        scoreText.text = score.ToString("00");
+        scoreText.text = newScore.ToString();
     }
 }

@@ -29,10 +29,12 @@ public class PlayaMoveScript: MonoBehaviour
     [SerializeField] private KeyCode interactKey = KeyCode.E;
 
     [Header("Movement Parameters")]
-    [SerializeField] private float walkSpeed = 3.0f;
-    [SerializeField] private float sprintSpeed = 6.0f;
-    [SerializeField] private float crouchSpeed = 1.5f;
+    [SerializeField] private float walkSpeed = 5.0f;
+    [SerializeField] private float sprintSpeed = 8.0f;
+    [SerializeField] private float crouchSpeed = 2.5f;
     [SerializeField] private float slopeSpeed = 8.0f;
+
+    public float playerSpeedMultiplier = 1f;
 
     [Header("Jump Settings")]
     [SerializeField] private float jumpForce = 8.0f;
@@ -82,7 +84,7 @@ public class PlayaMoveScript: MonoBehaviour
 
     private void HandleMovmementInput()
     {
-        currentInput = new Vector2((isCrouching ? crouchSpeed : isSprinting ? sprintSpeed : walkSpeed) * Input.GetAxisRaw("Vertical"), (isCrouching ? crouchSpeed : isSprinting ? sprintSpeed : walkSpeed) * Input.GetAxisRaw("Horizontal"));
+        currentInput = new Vector2((isCrouching ? crouchSpeed : isSprinting ? sprintSpeed : walkSpeed) * Input.GetAxisRaw("Vertical") * playerSpeedMultiplier, (isCrouching ? crouchSpeed : isSprinting ? sprintSpeed : walkSpeed) * Input.GetAxisRaw("Horizontal") * playerSpeedMultiplier);
 
         float moveDirectionY = moveDirection.y;
         if (currentInput.x != 0 && currentInput.y != 0)

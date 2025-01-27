@@ -161,7 +161,6 @@ public class PlayaMoveScript: MonoBehaviour
             currentInteractable.OnInteract();
         }
     }
-    //&& Physics.Raycast(playerCamera.ViewportPointToRay(interactionRayPoint), out RaycastHit hit, interactionDistance, interactionLayer)
 
     private IEnumerator CrouchStand()
     {

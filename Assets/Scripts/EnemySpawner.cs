@@ -38,11 +38,13 @@ public class EnemySpawner : MonoBehaviour
             zPos = Random.Range(positionz - range, positionz + range);
             if (randomNum < spawnerDifficulty)
             {
-                Instantiate(fastZombie, new Vector3(xPos, positiony, zPos), Quaternion.identity);
+                GameObject newZombie = Instantiate(fastZombie, new Vector3(xPos, positiony, zPos), Quaternion.identity);
+                newZombie.transform.SetParent(transform, false);
             }
             else
             {
-                Instantiate(zombie, new Vector3(xPos, positiony, zPos), Quaternion.identity);
+                GameObject newZombie = Instantiate(zombie, new Vector3(xPos, positiony, zPos), Quaternion.identity);
+                newZombie.transform.SetParent(transform, false);
             }
             yield return new WaitForSeconds(spawnInterval);
             zombieCount += 1;

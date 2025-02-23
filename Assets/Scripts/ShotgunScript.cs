@@ -137,8 +137,8 @@ public class ShotgunScript : MonoBehaviour
         RaycastHit hit;
         for (int n = 0; n < pelletCount; n++)
         {
-            float bloomx = Random.Range(-5.0f, 5.0f);
-            float bloomy = Random.Range(-5.0f, 5.0f);
+            float bloomx = Random.Range(-2.5f, 2.5f);
+            float bloomy = Random.Range(-2.5f, 2.5f);
             Vector3 bloomVector = new Vector3(bloomx, bloomy);
             if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward + bloomVector, out hit, range))
             {

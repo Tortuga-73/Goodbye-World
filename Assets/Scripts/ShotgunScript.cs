@@ -1,7 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
+using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ShotgunScript : MonoBehaviour
 {
@@ -131,15 +135,20 @@ public class ShotgunScript : MonoBehaviour
         OnShoot?.Invoke(currentAmmo);
 
         RaycastHit hit;
-        //for ()
-        
-        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+        for (int n = 0; n < pelletCount; n++)
         {
-            Enemy targetEnemy = hit.transform.GetComponent<Enemy>();
-            if (targetEnemy != null)
+            float bloomx = Random.Range(-5.0f, 5.0f);
+            float bloomy = Random.Range(-5.0f, 5.0f);
+            Vector3 bloomVector = new Vector3(bloomx, bloomy);
+            if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward + bloomVector, out hit, range))
             {
-                targetEnemy.TakeDamage(damage);
-            }
+                Enemy targetEnemy = hit.transform.GetComponent<Enemy>();
+                if (targetEnemy != null)
+                    {
+                        targetEnemy.TakeDamage(damage);
+                    }
+                //impact mark here
+            } 
         }
     }
 

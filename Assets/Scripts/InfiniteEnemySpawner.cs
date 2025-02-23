@@ -1,7 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
-using UnityEditor.Rendering;
 using UnityEngine;
 
 public class InfiniteEnemySpawner : MonoBehaviour

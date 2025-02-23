@@ -24,7 +24,6 @@ public class SpeedUpgradeScript : Interactable
         {
             Debug.Log("You do not have enough money to purchase this upgrade.");
         }
-        print("Interacted With " + gameObject.name);
     }
 
     public override void OnLoseFocus()

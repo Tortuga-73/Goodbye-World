@@ -145,7 +145,7 @@ public class ShotgunScript : MonoBehaviour
                 Enemy targetEnemy = hit.transform.GetComponent<Enemy>();
                 if (targetEnemy != null)
                     {
-                        targetEnemy.TakeDamage(damage);
+                        targetEnemy.TakeDamage(damage/pelletCount);
                     }
                 //impact mark here
             } 

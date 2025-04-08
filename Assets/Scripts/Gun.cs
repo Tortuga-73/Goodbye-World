@@ -3,6 +3,7 @@ using System.Collections;
 using static UnityEngine.GraphicsBuffer;
 using Unity.VisualScripting;
 using System;
+using Random = UnityEngine.Random;
 
 public class Gun : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class Gun : MonoBehaviour
     public int currentAmmo;
     public float reloadTime = 2f;
     private bool isReloading = false;
+
+    [SerializeField] private bool isShotgun = false;
+    public int pelletCount = 8;
 
     public Camera fpsCam;
 
@@ -132,13 +136,35 @@ public class Gun : MonoBehaviour
         currentAmmo--;
         OnShoot?.Invoke(currentAmmo);
         
-        RaycastHit hit;
-        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+        if (isShotgun)
         {
-            Enemy targetEnemy = hit.transform.GetComponent<Enemy>();
-            if (targetEnemy != null)
+            RaycastHit hit;
+            for (int n = 0; n < pelletCount; n++)
             {
-                targetEnemy.TakeDamage(damage);
+                float bloomx = Random.Range(-.1f, .1f);
+                float bloomy = Random.Range(-.1f, .1f);
+                Vector3 bloomVector = new Vector3(bloomx, bloomy);
+                if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward + bloomVector, out hit, range))
+                {
+                    Enemy targetEnemy = hit.transform.GetComponent<Enemy>();
+                    if (targetEnemy != null)
+                    {
+                        targetEnemy.TakeDamage(damage/pelletCount);
+                    }
+                    //impact mark here
+                }
+            }
+        }
+        else
+        {
+            RaycastHit hit;
+            if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+            {
+                Enemy targetEnemy = hit.transform.GetComponent<Enemy>();
+                if (targetEnemy != null)
+                {
+                    targetEnemy.TakeDamage(damage);
+                }
             }
         }
     }

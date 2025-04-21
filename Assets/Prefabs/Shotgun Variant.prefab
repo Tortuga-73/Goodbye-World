@@ -89,13 +89,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce7aa6a5b4542894ca666f34f8391427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 60
   range: 100
   fireRate: 15
   isFullAuto: 0
   maxAmmo: 30
   currentAmmo: 0
   reloadTime: 2
+  isShotgun: 1
+  pelletCount: 8
   fpsCam: {fileID: 0}
   timeToZoom: 0.2
   zoomFOV: 30

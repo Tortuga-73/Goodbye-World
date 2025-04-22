@@ -1,10 +1,12 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
 public class Enemy : MonoBehaviour
 {
 
+    Rigidbody rb;
     public float health = 50f;
     public float damage = 10f;
     public float range = 2f;
@@ -16,6 +18,11 @@ public class Enemy : MonoBehaviour
     private float deathScore = 100f;
 
     public static Action<float> OnKilledEnemy;
+
+    public void Start()
+    {
+        rb = this.GetComponent<Rigidbody>();
+    }
 
     public void TakeDamage(float amount)
     {

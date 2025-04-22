@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditorInternal;
+//using UnityEditorInternal;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -60,7 +60,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void NextWave(int waveNum)
     {
-        spawnerDifficulty = 0.2f * waveNum;
+        spawnerDifficulty = 0.2f * waveNum - 0.2f;
         zombieCount = 0;
         StartCoroutine(SpawnEnemies());
     }

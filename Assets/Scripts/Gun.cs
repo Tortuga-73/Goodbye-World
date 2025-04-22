@@ -9,6 +9,9 @@ public class Gun : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    [SerializeField] AudioSource gunshot;
+    [SerializeField] private ParticleSystem muzzleFlash;
+    
     [SerializeField] private float damage = 10f;
     [SerializeField] private float range = 100f;
     [SerializeField] private float fireRate = 15f;
@@ -62,6 +65,7 @@ public class Gun : MonoBehaviour
     private void Awake()
     {
         fpsCam = Camera.main;
+        gunshot = this.GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -81,7 +85,9 @@ public class Gun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        gunshot = this.GetComponent<AudioSource>();
+
+
         if (isReloading)
         {
             return;
@@ -135,14 +141,16 @@ public class Gun : MonoBehaviour
 
         currentAmmo--;
         OnShoot?.Invoke(currentAmmo);
+        gunshot.Play();
+        muzzleFlash.Play();
         
         if (isShotgun)
         {
             RaycastHit hit;
             for (int n = 0; n < pelletCount; n++)
             {
-                float bloomx = Random.Range(-.1f, .1f);
-                float bloomy = Random.Range(-.1f, .1f);
+                float bloomx = Random.Range(-.05f, .05f);
+                float bloomy = Random.Range(-.05f, .05f);
                 Vector3 bloomVector = new Vector3(bloomx, bloomy);
                 if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward + bloomVector, out hit, range))
                 {

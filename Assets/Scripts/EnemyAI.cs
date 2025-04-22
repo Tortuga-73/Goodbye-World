@@ -5,6 +5,9 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
+    [Header("Animations")]
+    [SerializeField] private Animator _animator;
+
     public float lookRadius = 15f;
 
     Transform target;
@@ -30,6 +33,12 @@ public class EnemyAI : MonoBehaviour
                 FaceTarget();
             }
         }
+
+        float movementValue = agent.velocity.magnitude;
+
+        _animator.SetFloat("itsZombinTime", movementValue);
+        Debug.Log(movementValue);
+
     }
 
     void FaceTarget()

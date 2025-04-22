@@ -8,6 +8,7 @@ public class UI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI healthText = default;
     [SerializeField] private TextMeshProUGUI ammoText = default;
     [SerializeField] private TextMeshProUGUI scoreText = default;
+    [SerializeField] private TextMeshProUGUI waveText = default;
     private float maxAmmo;
     private float currentAmmo;
 
@@ -23,6 +24,7 @@ public class UI : MonoBehaviour
         Gun.OnReload += UpdateAmmo;
         WeaponSwitch.OnWeaponSwap += WeaponSwap;
         PlayaStatusScript.OnUpdateScore += UpdateScoreUI;
+        WaveSpawner.OnWaveComplete += WaveText;
     }
     private void OnDisable()
     {
@@ -32,10 +34,11 @@ public class UI : MonoBehaviour
         Gun.OnReload -= UpdateAmmo;
         WeaponSwitch.OnWeaponSwap -= WeaponSwap;
         PlayaStatusScript.OnUpdateScore -= UpdateScoreUI;
+        WaveSpawner.OnWaveComplete -= WaveText;
     }
     private void UpdateHealth(float currentHealth)
     {
-        healthText.text = currentHealth.ToString("00");
+        healthText.text = "Health: " + currentHealth.ToString("00");
     }
     private void UpdateAmmo(float cAmm)
     {
@@ -50,10 +53,14 @@ public class UI : MonoBehaviour
     }
     private void AmmoText()
     {
-        ammoText.text = currentAmmo.ToString("00") + " / " + maxAmmo.ToString("00");
+        ammoText.text = "Ammo: " + currentAmmo.ToString("00") + " / " + maxAmmo.ToString("00");
     }
     private void UpdateScoreUI(float newScore)
     {
-        scoreText.text = newScore.ToString();
+        scoreText.text = "Score: " + newScore.ToString();
+    }
+    private void WaveText(int waveNum)
+    {
+        waveText.text = "Wave: " + waveNum.ToString();
     }
 }

@@ -1054,7 +1054,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1591314012}
         m_TargetAssemblyTypeName: MainMenuButtons, Assembly-CSharp
-        m_MethodName: SelectLevel
+        m_MethodName: OnApplicationQuit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

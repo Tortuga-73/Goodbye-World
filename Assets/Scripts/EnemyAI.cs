@@ -37,8 +37,6 @@ public class EnemyAI : MonoBehaviour
         float movementValue = agent.velocity.magnitude;
 
         _animator.SetFloat("itsZombinTime", movementValue);
-        Debug.Log(movementValue);
-
     }
 
     void FaceTarget()

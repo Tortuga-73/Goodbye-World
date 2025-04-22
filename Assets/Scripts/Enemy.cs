@@ -1,5 +1,6 @@
 using System;
 using Unity.VisualScripting;
+using UnityEditorInternal;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
@@ -18,6 +19,7 @@ public class Enemy : MonoBehaviour
     private float deathScore = 100f;
 
     public static Action<float> OnKilledEnemy;
+    public static Action<bool> OnAddKill;
 
     public void Start()
     {
@@ -37,6 +39,7 @@ public class Enemy : MonoBehaviour
     {
         Destroy(gameObject);
         OnKilledEnemy?.Invoke(deathScore);
+        OnAddKill?.Invoke(true);
     }
 
     private void Update()

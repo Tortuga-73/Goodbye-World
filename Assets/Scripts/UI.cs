@@ -9,8 +9,10 @@ public class UI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI ammoText = default;
     [SerializeField] private TextMeshProUGUI scoreText = default;
     [SerializeField] private TextMeshProUGUI waveText = default;
+    [SerializeField] private TextMeshProUGUI killText = default;
     private float maxAmmo;
     private float currentAmmo;
+    private int killCount;
 
     private void Start()
     {
@@ -25,6 +27,7 @@ public class UI : MonoBehaviour
         WeaponSwitch.OnWeaponSwap += WeaponSwap;
         PlayaStatusScript.OnUpdateScore += UpdateScoreUI;
         WaveSpawner.OnWaveComplete += WaveText;
+        Enemy.OnAddKill += KillText;
     }
     private void OnDisable()
     {
@@ -35,6 +38,7 @@ public class UI : MonoBehaviour
         WeaponSwitch.OnWeaponSwap -= WeaponSwap;
         PlayaStatusScript.OnUpdateScore -= UpdateScoreUI;
         WaveSpawner.OnWaveComplete -= WaveText;
+        Enemy.OnAddKill -= KillText;
     }
     private void UpdateHealth(float currentHealth)
     {
@@ -62,5 +66,10 @@ public class UI : MonoBehaviour
     private void WaveText(int waveNum)
     {
         waveText.text = "Wave: " + waveNum.ToString();
+    }
+    private void KillText(bool asdf)
+    {
+        killCount++;
+        killText.text = "Kills: " + killCount.ToString();
     }
 }

@@ -7,7 +7,7 @@ public class MainMenuButtons : MonoBehaviour
 {
     public void SelectLevel()
     {
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(3);
     }
 
     public void OptionsMenu()

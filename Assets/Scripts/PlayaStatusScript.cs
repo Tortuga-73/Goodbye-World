@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class PlayaStatusScript : MonoBehaviour
 {
@@ -43,7 +44,7 @@ public class PlayaStatusScript : MonoBehaviour
         currentHealth -= dmg;
         OnDamage?.Invoke(currentHealth);
 
-        if (currentHealth < 0)
+        if (currentHealth <= 0)
             KillPlayer();
         else if(regeneratingHealth != null)
             StopCoroutine(regeneratingHealth);
@@ -66,6 +67,12 @@ public class PlayaStatusScript : MonoBehaviour
             StopCoroutine(regeneratingHealth);
 
             print("ya died.");
+            SceneManager.LoadSceneAsync(5);
+        }
+        else
+        {
+            print("ya died.");
+            SceneManager.LoadSceneAsync(5);
         }
     }
 

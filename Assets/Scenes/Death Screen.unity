@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 132984755}
   - component: {fileID: 132984754}
   m_Layer: 5
-  m_Name: Level Select (1)
+  m_Name: Main Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

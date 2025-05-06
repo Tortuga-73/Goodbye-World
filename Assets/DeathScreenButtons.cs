@@ -13,7 +13,7 @@ public class DeathScreenButtons : MonoBehaviour
 
     public void PlayAgain()
     {
-        SceneManager.LoadSceneAsync(3);
+        SceneManager.LoadSceneAsync(1);
     }
 
     public void MainMenu()

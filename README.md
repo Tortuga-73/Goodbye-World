@@ -20,7 +20,7 @@ TECHNOLOGIES USED
 *Unity game development engine
 *Microsoft Visual Studio for script editing
 
-INSTALLMENT & RUNNING INSTRUCTIONS
+INSTALLMENT & RUNNING INSTRUCTIONS | 
 Two methods of installing:
 1. Download the Unity project files and open with the Unity editor
 2. WARNING - I have not been able to get the build files to properly upload to GitHub, so I am still working on solutions to get the build of the game uploaded. When it works, you will be able to download the Build folder and run the "Goodbye World.exe" file to run the game.
